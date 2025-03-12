@@ -1,0 +1,17 @@
+.box{
+    border: 1px solid black;
+    max-height: 100px;
+    overflow: scroll;
+    padding: 10px;
+    margin: 10px;
+    background-color: yellow;
+
+}
+#my{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    overflow: auto;
+    background-color: cyan;
+}
