@@ -1,0 +1,16 @@
+.container{
+    height: 500px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.box{
+    /* height: 100px;
+    width: 100px; */
+    /* padding: 2px; */
+    margin: 1px;
+    border: 2px solid red;
+    background-color: aqua;
+}
