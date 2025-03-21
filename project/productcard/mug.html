@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Mug Product</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+
+        .product-card {
+            width: 500px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            /* flex-direction: column; */
+            align-items: flex-start;
+        }
+
+        .product-image {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-category {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .price-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .current-price {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .original-price {
+            font-size: 0.9em;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .add-to-cart-button::before {
+            content: "\f07a"; /* Unicode for shopping cart icon */
+            font-family: "Font Awesome 5 Free"; /* Make sure to include Font Awesome */
+            font-weight: 900;
+            margin-right: 8px;
+        }
+        #text{
+            width: 50%;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <img src="mug.jpg" alt="White Coffee Mug" class="product-image">
+        <div id="text">
+            <p class="product-category">COFFEE MUG</p>
+            <h2 class="product-title">White Coffee Mug</h2>
+            <p class="product-description">Coffee Mugs are designed to express emotions. These are acclaimed for their amazing designs & superior quality.</p>
+            <div class="price-container">
+                <span class="current-price">₹149</span>
+                <span class="original-price">₹230</span>
+            </div>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+    
+</body>
+</html>
