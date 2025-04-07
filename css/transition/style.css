@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    display: flex;
+}
+
+.box {
+    background-color: red;
+    border: 3px solid green;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    /* transition: 1s;
+    transition-property: all;
+    transition-delay: 3s; */
+    /* transition: transform 200ms ease ; */
+    transition: transform 2s cubic-bezier(0, 1.86, 0.71, 2.47);
+}
+
+.box:hover {
+    /* background-color: blue;
+    transform: rotate(45deg); */
+    transform: translateX(500px);
+ 
+}
