@@ -25,24 +25,37 @@
 // }
 
 
-function calc(a,b,o)
-{
-    let result;
-    switch(o){
-        case '+':
-           return result=a+b;
-            break;
-        case'-':
-       return result=a-b;
-        break;
-        case'*':
-       return result=a*b;
-        break;
+// function calc(a,b,o)
+// {
+//     let result;
+//     switch(o){
+//         case '+':
+//            return result=a+b;
+//             break;
+//         case'-':
+//        return result=a-b;
+//         break;
+//         case'*':
+//        return result=a*b;
+//         break;
 
-        default:
-            return("invalid operator");
+//         default:
+//             return("invalid operator");
 
-    }
+//     }
+// }
+
+// console.log(calc(2,3,"*"));
+
+
+const palendrome = (str) => {
+let reverse = "";
+for(let i = str.length-1; i>=0; i--){
+ reverse = reverse + str[i];   
 }
+// return reverse;
 
-console.log(calc(2,3,"*"));
+ return str == reverse ? true : false;
+};
+
+console.log(palendrome("madam"));
